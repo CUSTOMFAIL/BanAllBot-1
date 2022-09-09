@@ -1,6 +1,7 @@
 from Code import bot
 from pyrogram import Client, idle
 from pyrogram import Client, filters
+import logging
 
 @bot.on_message(filters.command("banall") & filters.group)
 def NewChat(bot,message):
